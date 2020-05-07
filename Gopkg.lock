@@ -2,19 +2,24 @@
 
 
 [[projects]]
+  digest = "1:a2c1d0e43bd3baaa071d1b9ed72c27d78169b2b269f71c105ac4ba34b1be4a39"
   name = "github.com/davecgh/go-spew"
   packages = ["spew"]
+  pruneopts = "NUT"
   revision = "346938d642f2ec3594ed81d874461961cd0faa76"
   version = "v1.1.0"
 
 [[projects]]
+  digest = "1:65013bb20b9eba29d86023320c9285dae8600b1df4d657183a6818b803d8eb56"
   name = "github.com/gogo/protobuf"
   packages = ["proto"]
+  pruneopts = "NUT"
   revision = "342cbe0a04158f6dcb03ca0079991a51a4248c02"
   version = "v0.5"
 
 [[projects]]
   branch = "master"
+  digest = "1:7e042bd84171c73dee77147a4e0161a7d33332e5c9cb19848da8d55a8d76f4d8"
   name = "github.com/golang/protobuf"
   packages = [
     "jsonpb",
@@ -23,34 +28,89 @@
     "protoc-gen-go/plugin",
     "ptypes/empty",
     "ptypes/struct",
-    "ptypes/wrappers"
+    "ptypes/wrappers",
   ]
+  pruneopts = "NUT"
   revision = "7716a980bceefe9a0213654823d9ea62d23b87a2"
 
 [[projects]]
+  digest = "1:5cf3f025cbee5951a4ee961de067c8a89fc95a5adabead774f82822efabab121"
   name = "github.com/pkg/errors"
   packages = ["."]
+  pruneopts = "NUT"
   revision = "645ef00459ed84a119197bfb8d8205042c6df63d"
   version = "v0.8.0"
 
 [[projects]]
+  digest = "1:0028cb19b2e4c3112225cd871870f2d9cf49b9b4276531f03438a88e94be86fe"
   name = "github.com/pmezard/go-difflib"
   packages = ["difflib"]
+  pruneopts = "NUT"
   revision = "792786c7400a136282c1664665ae0a8db921c6c2"
   version = "v1.0.0"
 
 [[projects]]
+  digest = "1:be7d615463b5c9c5fd732a3cc028038e8643543def6e55344b52a3a4dbb667a3"
   name = "github.com/stretchr/testify"
   packages = [
     "assert",
-    "require"
+    "require",
   ]
+  pruneopts = "NUT"
   revision = "b91bfb9ebec76498946beb6af7c0230c7cc7ba6c"
   version = "v1.2.0"
+
+[[projects]]
+  digest = "1:06a5190783af59d08bc3d834a0e16996697b2ec994528db7eb1b3455c6256fef"
+  name = "github.com/twitchtv/twirp"
+  packages = [
+    ".",
+    "clientcompat/internal/clientcompat",
+    "ctxsetters",
+    "example",
+    "hooks/statsd",
+    "internal/contextkeys",
+    "internal/descriptors",
+    "internal/gen",
+    "internal/gen/stringutils",
+    "internal/gen/typemap",
+    "internal/twirptest",
+    "internal/twirptest/importable",
+    "internal/twirptest/importmapping/y",
+    "internal/twirptest/no_package_name",
+  ]
+  pruneopts = "NUT"
+  revision = "9132c3ed9bbe402c1ade4a1ce7294b34761b394a"
+  version = "v5.10.1"
 
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  inputs-digest = "4871cc1866de9f66cab7a24d6f7011b047ce72df4f37684dc46882771608be0c"
+  input-imports = [
+    "github.com/gogo/protobuf/proto",
+    "github.com/golang/protobuf/jsonpb",
+    "github.com/golang/protobuf/proto",
+    "github.com/golang/protobuf/protoc-gen-go/descriptor",
+    "github.com/golang/protobuf/protoc-gen-go/plugin",
+    "github.com/golang/protobuf/ptypes/empty",
+    "github.com/golang/protobuf/ptypes/wrappers",
+    "github.com/pkg/errors",
+    "github.com/stretchr/testify/assert",
+    "github.com/stretchr/testify/require",
+    "github.com/twitchtv/twirp",
+    "github.com/twitchtv/twirp/clientcompat/internal/clientcompat",
+    "github.com/twitchtv/twirp/ctxsetters",
+    "github.com/twitchtv/twirp/example",
+    "github.com/twitchtv/twirp/hooks/statsd",
+    "github.com/twitchtv/twirp/internal/contextkeys",
+    "github.com/twitchtv/twirp/internal/descriptors",
+    "github.com/twitchtv/twirp/internal/gen",
+    "github.com/twitchtv/twirp/internal/gen/stringutils",
+    "github.com/twitchtv/twirp/internal/gen/typemap",
+    "github.com/twitchtv/twirp/internal/twirptest",
+    "github.com/twitchtv/twirp/internal/twirptest/importable",
+    "github.com/twitchtv/twirp/internal/twirptest/importmapping/y",
+    "github.com/twitchtv/twirp/internal/twirptest/no_package_name",
+  ]
   solver-name = "gps-cdcl"
   solver-version = 1
